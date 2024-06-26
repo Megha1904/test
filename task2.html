@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Form Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  label, input, textarea, button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="submit"], button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Sample Form</h1>
-        <h2>Enter your details below:</h2>
-    </header>
-    
-    <form action="/submit-form" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+  <form action="#" method="POST">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age">
+
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
+
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+
+    <label for="upload">Upload file:</label>
+    <input type="file" id="upload" name="upload">
+
+    <label for="select">Select Option:</label>
+    <select id="select" name="select">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+    <input type="submit" value="Submit Form">
+    <button type="reset">Reset Form</button>
+  </form>
 </body>
 </html>
