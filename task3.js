@@ -12,7 +12,6 @@ function greet(name) {
 
 console.log("str:", str, typeof str);
 console.log("score:", score, typeof score);
-console.log("num:", num, typeof num);
 console.log("isLoggedIn:", isLoggedIn, typeof isLoggedInd);
 console.log("userEmail:", userEmail, typeof userEmail);
 console.log("heros:", heros, typeof heros);
