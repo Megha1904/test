@@ -9,7 +9,7 @@ if (time < 12) {
 }
 
 
-let month= 2;
+let month = 2;
 let monthName;
 
 switch (month) {
@@ -23,7 +23,7 @@ switch (month) {
         monthName = "March";
         break;
     case 4:
-        monthName ="April";
+        monthName = "April";
         break;
     case 5:
         monthName = "May";
@@ -48,9 +48,25 @@ switch (month) {
         break;
     case 12:
         monthName = "December";
-        break;                 
+        break;
     default:
         monthNameName = "Unknown";
 }
 console.log("Month is " + monthName);
 
+let coupon = "OFFER10";
+console.log("coupon", coupon)
+if (coupon == "OFFER10") {
+    console.log("Offer of 10%");
+} else if (coupon == "OFFER20") {
+    console.log("Offer is of 20%");
+}
+else if
+    (coupon == "OFFER30") {
+    console.log("Offer is of 30%")
+
+}
+
+else {
+    console.log("NO OFFER Availabel");
+}
