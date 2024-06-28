@@ -16,3 +16,16 @@ do {
     console.log(`Age is ${age}`);
     age++
 } while (age<22);
+
+const myName = "MEGHA";
+for (let char of myName){
+    console.log("my characters " + char)
+}
+
+const person = {
+    city: "Lucknow",
+    age: 21
+};
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
